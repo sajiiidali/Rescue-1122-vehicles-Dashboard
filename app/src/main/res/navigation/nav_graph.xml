@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/showWebView"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.ShowWebView"
+        android:label="1122 DashBoard"
+        tools:layout="@layout/show_web_view">
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/ptsVehicles"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehicles"
+        android:label="pts_layout"
+        tools:layout="@layout/pts_layout" >
+        <action
+            android:id="@+id/action_ptsVehicles_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right" />
+    </dialog>
+    <dialog
+        android:id="@+id/MotorBike"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.MotorBikes"
+        android:label="motor_bikes"
+        tools:layout="@layout/motor_bikes" >
+        <action
+            android:id="@+id/action_MotorBike_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+    </dialog>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SettingsFragment"
+        android:label="SettingsFragment" />
+    <action android:id="@+id/action_global_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.HomeFragment"
+        android:label="@string/DashBoard"
+        tools:layout="@layout/homefragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_selectVehiclesType"
+            app:destination="@id/selectVehiclesType"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_showWebView2"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_selectEmployees"
+            app:destination="@id/selectEmployees"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_checkVehicleStatus"
+            app:destination="@id/checkVehicleStatus"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/selectVehiclesType"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SelectVehiclesType"
+        android:label="Select Vehicles"
+        tools:layout="@layout/select_type_vehicles" >
+        <action
+            android:id="@+id/action_selectVehiclesType_to_showOperationDialog"
+            app:destination="@id/showOperationDialog" />
+        <action
+            android:id="@+id/action_selectVehiclesType_to_ptsVehicles"
+            app:destination="@id/ptsVehicles" />
+        <action
+            android:id="@+id/action_selectVehiclesType_to_MotorBike"
+            app:destination="@id/MotorBike" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectEmployees"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SelectEmployees"
+        android:label="Select Employees"
+        tools:layout="@layout/select_employees" >
+        <action
+            android:id="@+id/action_selectEmployees_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+    </fragment>
+    <dialog
+        android:id="@+id/showOperationDialog"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.ShowOperationDialog"
+        android:label="show_operation_dialog"
+        tools:layout="@layout/show_operation_dialog" >
+        <action
+            android:id="@+id/action_showOperationDialog_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+    </dialog>
+    <fragment
+        android:id="@+id/checkVehicleStatus"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.CheckVehicleStatus"
+        android:label="check_vehicle_status"
+        tools:layout="@layout/check_vehicle_status" >
+        <action
+            android:id="@+id/action_checkVehicleStatus_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right"/>
+    </fragment>
+</navigation>

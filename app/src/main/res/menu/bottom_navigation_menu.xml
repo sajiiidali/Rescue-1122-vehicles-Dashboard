@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Operational"
+        android:title="@string/operational"
+        android:icon="@drawable/ic_car"/>
+    <item
+        android:id="@+id/ptsVehicles"
+        android:icon="@drawable/ic_car"
+        android:title="@string/pts"/>
+    <item
+        android:id="@+id/MotorBike"
+        android:icon="@drawable/ic_car"
+        android:title="@string/motorBike" />
+
+</menu>

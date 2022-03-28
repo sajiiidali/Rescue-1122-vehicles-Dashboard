@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/drawable/bottom_navigation_designe.xml" value="0.20277777777777778" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/drawable/ic_rateus.xml" value="1.1285714285714286" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/drawable/ic_share.xml" value="0.2203125" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/drawable/shape.xml" value="0.2203125" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/drawable/shapefire.xml" value="0.2203125" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-hdpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-hdpi/check_vehicle_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-hdpi/homefragment.xml" value="0.18" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-hdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-land/check_vehicle_status.xml" value="0.16" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-land/homefragment.xml" value="0.75" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-land/show_web_view.xml" value="0.2947916666666667" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-ldpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-ldpi/check_vehicle_status.xml" value="1.0" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-ldpi/homefragment.xml" value="1.0" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-ldpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-mdpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-mdpi/check_vehicle_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-mdpi/homefragment.xml" value="0.5" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-mdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xhdpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xhdpi/check_vehicle_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xhdpi/homefragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xhdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxhdpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxhdpi/check_vehicle_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxhdpi/homefragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxhdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxxhdpi/check_vehicle_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxxhdpi/homefragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout-xxxhdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/check_vehicle_status.xml" value="0.18" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/home_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/homefragment.xml" value="0.33" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/login_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/motor_bikes.xml" value="0.22" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/operation_vehicles.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/pts_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/select_employees.xml" value="0.18" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/select_reports.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/select_type_vehicles.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/show_operation_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/layout/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/menu/my_menu.xml" value="1.4" />
+        <entry key="..\:/Users/Muhammad Sajid Ali/AndroidStudioProjects/Rescue1122VehicleDashBoard/app/src/main/res/xml/root_preferences.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

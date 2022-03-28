@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Rescue 1122 Vehicle DashBoard</string>
+    <string name="bna1">BNA 01</string>
+    <string name="bna2">BNA 02</string>
+    <string name="bna3">BNA 03</string>
+    <string name="bna4">BNA 04</string>
+    <string name="operational">Operational\n Vehicles</string>
+    <string name="operational_vehicles">Operational Vehicles</string>
+    <string name="pts">PTS</string>
+    <string name="bna8">BNA 08</string>
+    <string name="bna9">BNA 09</string>
+    <string name="bna21">BNA 21</string>
+    <string name="bna22">BNA 22</string>
+    <string name="motorBike">MotorBike</string>
+    <string name="BNB01">BNB 1</string>
+    <string name="BNB02">BNB 2</string>
+    <string name="BNB03">BNB 3</string>
+    <string name="BNB04">BNB 4</string>
+    <string name="BNB05">BNB 5</string>
+    <string name="BNB06">BNB 6</string>
+    <string name="BNB07">BNB 7</string>
+    <string name="BNB08">BNB 8</string>
+    <string name="BNB09">BNB 9</string>
+    <string name="BNB10">BNB 10</string>
+    <string name="BNB11">BNB 11</string>
+    <string name="BNB12">BNB 12</string>
+    <string name="BNB13">BNB 13</string>
+    <string name="BNB14">BNB 14</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="setPassword">PASSWORD</string>
+    <string name="userName">USERNAME</string>
+    <string name="rescueDashBoard">Save Username and password for Login</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate us</string>
+    <string name="About">About</string>
+    <string name="moreApps">More Apps</string>
+    <string name="aboutUS">Version App 3.1.2\nEmail ID:\nDigitalFingerApps.pk@gmail.com</string>
+    <string name="settings">Settings</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="vehiclesDiagnos">Vehicles\n Diagnoses</string>
+    <string name="Employees">Employees\n Field Staff</string>
+    <string name="Reports">Emergency\n Reports</string>
+    <string name="DashBoard">DashBoard</string>
+    <string name="ptsVehicles">PTS\n Vehicles</string>
+    <string name="drivers">Drivers</string>
+    <string name="responders">EMT &amp; FR\n DR &amp; LFR</string>
+    <string name="motorBikeEmt">Motor Bike\n EMT</string>
+    <string name="locationBaseReport">Location Base\n Reports</string>
+    <string name="EmployeesBaseReports">Employees Base\n Reports</string>
+    <string name="bnf1">BNF 01</string>
+    <string name="bfn3">BNF 03</string>
+    <string name="bnr1">BNR 1</string>
+    <string name="bng11">BNG 1</string>
+    <string name="bna7">BNA 07</string>
+    <string name="vehiclesStatus">Vehicle\n Status</string>
+    <string name="allVehicleStatus">All Vehicle\n Status</string>
+    <string name="idle">On Idle</string>
+    <string name="Maintenance">On Maintenance</string>
+    <string name="OnEmergency">On Emergency</string>
+    <string name="OnProtocol">On Protocol</string>
+    <string name="check_vehicle_status">Check Vehicle Status</string>
+    <string name="companyName">Digital Finger Apps</string>
+</resources>
