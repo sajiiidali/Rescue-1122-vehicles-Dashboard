@@ -4,10 +4,15 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import java.util.*
+import android.content.pm.ActivityInfo
+
+
+
+
 
 class HomeFragment :Fragment(R.layout.homefragment) {
 
@@ -17,12 +22,12 @@ class HomeFragment :Fragment(R.layout.homefragment) {
         Objects.requireNonNull((requireActivity() as AppCompatActivity).supportActionBar!!).setTitle(R.string.app_name)
         Objects.requireNonNull((requireActivity() as AppCompatActivity).supportActionBar!!).show()
 
-        val vStatus  = view.findViewById<AppCompatButton>(R.id.VehiclesStatus)
-        val vehicles = view.findViewById<AppCompatButton>(R.id.Vehicles)
-        val vDiagnoses = view.findViewById<AppCompatButton>(R.id.vehiclesDiagnoses)
-        val employees  = view.findViewById<AppCompatButton>(R.id.Employees)
-        val reports    = view.findViewById<AppCompatButton>(R.id.Reports)
-        val dashBoard  = view.findViewById<AppCompatButton>(R.id.DashBoard)
+        val vStatus  = view.findViewById<ConstraintLayout>(R.id.VehiclesStatus)
+        val vehicles = view.findViewById<ConstraintLayout>(R.id.Vehicles)
+        val vDiagnoses = view.findViewById<ConstraintLayout>(R.id.vehiclesDiagnoses)
+        val employees  = view.findViewById<ConstraintLayout>(R.id.Employees)
+        val reports    = view.findViewById<ConstraintLayout>(R.id.Reports)
+        val dashBoard  = view.findViewById<ConstraintLayout>(R.id.DashBoard)
 
         vStatus.setOnClickListener {
             val directions = HomeFragmentDirections.actionHomeFragmentToCheckVehicleStatus()

@@ -15,108 +15,388 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/VehiclesStatus"
-            android:layout_width="500dp"
-            android:layout_height="150dp"
-            android:text="@string/vehiclesStatus"
-            android:textColor="@color/white"
-            android:textSize="40sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
             android:background="@drawable/shape"
             android:clickable="true"
-            android:elevation="10dp"
+            android:elevation="20dp"
             android:focusable="true"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Vehicles"
-        android:layout_width="500dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/vehicles"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:background="@drawable/shape"
-        android:clickable="true"
-        android:elevation="10dp"
-        android:focusable="true"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/VehiclesStatus"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/VehiclesStatus"
-        app:layout_constraintTop_toBottomOf="@+id/VehiclesStatus"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/amubulances"
+                tool:ignore="MissingConstraints" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/vehiclesDiagnoses"
-            android:layout_width="500dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="18dp"
+            <TextView
+                android:id="@+id/tvDiscription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/vehiclesStatus"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Vehicles"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/shape"
             android:clickable="true"
-            android:elevation="10dp"
+            android:elevation="20dp"
             android:focusable="true"
-            android:textSize="40sp"
-            android:textColor="@color/white"
-            android:text="@string/vehiclesDiagnos"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/VehiclesStatus"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/VehiclesStatus"
+            app:layout_constraintTop_toBottomOf="@+id/VehiclesStatus">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/amubulances"
+                tool:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDiscription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/vehicles"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vehiclesDiagnoses"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/Vehicles"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/Vehicles"
-            app:layout_constraintTop_toBottomOf="@+id/Vehicles" />
+            app:layout_constraintTop_toBottomOf="@+id/Vehicles">
 
-        <androidx.appcompat.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/vehiclediagnosis"
+                tool:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDiscription3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/vehiclesDiagnos"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Employees"
-            android:layout_width="500dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="18dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/shape"
             android:clickable="true"
-            android:elevation="10dp"
+            android:elevation="20dp"
             android:focusable="true"
-            android:textColor="@color/white"
-            android:text="@string/Employees"
-            android:textSize="40sp"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/vehiclesDiagnoses"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/vehiclesDiagnoses"
-            app:layout_constraintTop_toBottomOf="@+id/vehiclesDiagnoses" />
+            app:layout_constraintTop_toBottomOf="@+id/vehiclesDiagnoses">
 
-        <androidx.appcompat.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/memployee"
+                tool:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDiscription4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/Employees"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Reports"
-            android:layout_width="500dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="18dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/shape"
             android:clickable="true"
-            android:elevation="10dp"
+            android:elevation="20dp"
             android:focusable="true"
-            android:textColor="@color/white"
-            android:text="@string/Reports"
-            android:textSize="40sp"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/Employees"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/Employees"
-            app:layout_constraintTop_toBottomOf="@+id/Employees" />
+            app:layout_constraintTop_toBottomOf="@+id/Employees">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/reprots"
+                tool:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDiscription5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/Reports"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/DashBoard"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/Reports"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Reports"
+            app:layout_constraintTop_toBottomOf="@+id/Reports">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDiscription6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dashboard"
+                tool:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDiscription6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/DashBoard"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+    <!--
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/DashBoard"
-        android:layout_width="500dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="18dp"
+        android:id="@+id/VehiclesStatus"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/vehiclesStatus"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/Vehicles"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/vehicles"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:background="@drawable/shape"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:focusable="true"
+    android:textAllCaps="false"
+    app:layout_constraintEnd_toEndOf="@+id/VehiclesStatus"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/VehiclesStatus"
+    app:layout_constraintTop_toBottomOf="@+id/VehiclesStatus"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/vehiclesDiagnoses"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/vehiclesDiagnos"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/Vehicles"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Vehicles"
+        app:layout_constraintTop_toBottomOf="@+id/Vehicles" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Employees"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/shape"
         android:clickable="true"
         android:elevation="10dp"
         android:focusable="true"
         android:textColor="@color/white"
-        android:text="@string/DashBoard"
-        android:textSize="40sp"
+        android:text="@string/Employees"
+        android:textSize="20sp"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/Reports"
-        app:layout_constraintStart_toStartOf="@+id/Reports"
-        app:layout_constraintTop_toBottomOf="@+id/Reports" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintEnd_toEndOf="@+id/vehiclesDiagnoses"
+        app:layout_constraintStart_toStartOf="@+id/vehiclesDiagnoses"
+        app:layout_constraintTop_toBottomOf="@+id/vehiclesDiagnoses" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Reports"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:textColor="@color/white"
+        android:text="@string/Reports"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/Employees"
+        app:layout_constraintStart_toStartOf="@+id/Employees"
+        app:layout_constraintTop_toBottomOf="@+id/Employees" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/DashBoard"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:focusable="true"
+    android:textColor="@color/white"
+    android:text="@string/DashBoard"
+    android:textSize="20sp"
+    android:textAllCaps="false"
+    app:layout_constraintEnd_toEndOf="@+id/Reports"
+    app:layout_constraintStart_toStartOf="@+id/Reports"
+    app:layout_constraintTop_toBottomOf="@+id/Reports" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

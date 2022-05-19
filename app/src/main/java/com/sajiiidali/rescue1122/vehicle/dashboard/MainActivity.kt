@@ -8,10 +8,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         Objects.requireNonNull((this).supportActionBar!!).setTitle(R.string.app_name)
         Objects.requireNonNull((this).supportActionBar!!).show()
 
-//        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_navigation_id)
         val navHost : NavHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController= navHost.navController
         NavigationUI.setupActionBarWithNavController(this,navController)
@@ -34,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.my_menu, menu)
         return true
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.aboutUs -> {
