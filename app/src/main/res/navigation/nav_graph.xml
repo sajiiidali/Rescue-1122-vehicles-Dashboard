@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/MainDashBoard">
 
     <fragment
         android:id="@+id/showWebView"
@@ -48,44 +48,15 @@
     <action android:id="@+id/action_global_settingsFragment"
         app:destination="@id/settingsFragment" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.HomeFragment"
+        android:id="@+id/MainDashBoard"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.MainDashBoard"
         android:label="@string/DashBoard"
-        tools:layout="@layout/homefragment" >
-        <action
-            android:id="@+id/action_homeFragment_to_selectVehiclesType"
-            app:destination="@id/selectVehiclesType"
-            app:enterAnim="@anim/slid_in_right"
-            app:exitAnim="@anim/slid_out_left"
-            app:popEnterAnim="@anim/slid_in_left"
-            app:popExitAnim="@anim/slid_out_right" />
-        <action
-            android:id="@+id/action_homeFragment_to_showWebView2"
-            app:destination="@id/showWebView"
-            app:enterAnim="@anim/slid_in_right"
-            app:exitAnim="@anim/slid_out_left"
-            app:popEnterAnim="@anim/slid_in_left"
-            app:popExitAnim="@anim/slid_out_right"/>
-        <action
-            android:id="@+id/action_homeFragment_to_selectEmployees"
-            app:destination="@id/selectEmployees"
-            app:enterAnim="@anim/slid_in_right"
-            app:exitAnim="@anim/slid_out_left"
-            app:popEnterAnim="@anim/slid_in_left"
-            app:popExitAnim="@anim/slid_out_right"/>
-        <action
-            android:id="@+id/action_homeFragment_to_checkVehicleStatus"
-            app:destination="@id/checkVehicleStatus"
-            app:enterAnim="@anim/slid_in_right"
-            app:exitAnim="@anim/slid_out_left"
-            app:popEnterAnim="@anim/slid_in_left"
-            app:popExitAnim="@anim/slid_out_right"/>
-    </fragment>
+        tools:layout="@layout/main_dashboard" />
     <fragment
         android:id="@+id/selectVehiclesType"
         android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SelectVehiclesType"
-        android:label="Select Vehicles"
-        tools:layout="@layout/select_type_vehicles" >
+        android:label="@string/vehicle"
+        tools:layout="@layout/select_type_vehicles">
         <action
             android:id="@+id/action_selectVehiclesType_to_showOperationDialog"
             app:destination="@id/showOperationDialog" />
@@ -134,5 +105,37 @@
             app:exitAnim="@anim/slid_out_left"
             app:popEnterAnim="@anim/slid_in_left"
             app:popExitAnim="@anim/slid_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/showEmergencyReports"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.ShowEmergencyReports"
+        android:label="show_reports"
+        tools:layout="@layout/show_reports" />
+    <fragment
+        android:id="@+id/vehicles3"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.Vehicles"
+        android:label="@string/vehicle"
+        tools:layout="@layout/vehicles_layout">
+        <action
+            android:id="@+id/action_vehicles3_to_selectVehiclesType"
+            app:destination="@id/selectVehiclesType"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right" />
+        <action
+            android:id="@+id/action_vehicles3_to_checkVehicleStatus"
+            app:destination="@id/checkVehicleStatus"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right" />
+        <action
+            android:id="@+id/action_vehicles3_to_showWebView"
+            app:destination="@id/showWebView"
+            app:enterAnim="@anim/slid_in_right"
+            app:exitAnim="@anim/slid_out_left"
+            app:popEnterAnim="@anim/slid_in_left"
+            app:popExitAnim="@anim/slid_out_right" />
     </fragment>
 </navigation>

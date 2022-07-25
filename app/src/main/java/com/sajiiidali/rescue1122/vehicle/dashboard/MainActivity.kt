@@ -1,56 +1,94 @@
 package com.sajiiidali.rescue1122.vehicle.dashboard
 
+import android.content.Context
 import android.content.Intent
+import android.net.ConnectivityManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.AlertDialog
+import android.view.View
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
-import java.util.*
+import androidx.navigation.ui.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.navigation.NavigationView
+import com.sajiiidali.rescue1122.vehicle.dashboard.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var navController: NavController
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
+    lateinit var navController: NavController
+    lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        installSplashScreen()
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.appBarMain.toolbar)
 
-        Objects.requireNonNull((this).supportActionBar!!).setTitle(R.string.app_name)
-        Objects.requireNonNull((this).supportActionBar!!).show()
-
+        drawerLayout = binding.drawerLayout
+        val navView: NavigationView = binding.navView
+        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_navigation_id)
         val navHost : NavHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
-        navController= navHost.navController
-        NavigationUI.setupActionBarWithNavController(this,navController)
+        navController = navHost.navController
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.my_menu, menu)
-        return true
-    }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.aboutUs -> {
-                aboutUs()
-                return true
-            }
-            R.id.settings ->{
-            navController.navigate(R.id.settingsFragment)
-            }
-            R.id.share -> {
-                share()
-                return true
-            }
-            R.id.rateus -> {
-                rateUs()
-                return true
-            }
+        if (!isNetworkConnected()){
+            showErrorDialog()
         }
 
-        return super.onOptionsItemSelected(item)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.MainDashBoard), drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+        navView.setNavigationItemSelectedListener(this)
+        NavigationUI.setupWithNavController(bottomNavigation, navController)
+
+        navController.addOnDestinationChangedListener { _, destination, arguments ->
+            when (destination.id) {
+                R.id.showEmergencyReports->{
+                    bottomNavigation.visibility = View.GONE
+                    supportActionBar?.hide()
+                }
+                else -> {
+                    bottomNavigation.visibility = View.VISIBLE
+                    supportActionBar?.show()
+                }
+            }
+        }
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragmentContainer)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.share->{
+                share()
+            }
+            R.id.rateus->{
+                rateUs()
+            }
+            R.id.privacyPolicy->{
+                privacyPolicy()
+            }
+            R.id.settings->{
+                navController.navigate(R.id.settingsFragment)
+            }
+            R.id.checkUpdate->{
+                rateUs()
+            }
+            R.id.aboutUs->{
+                aboutUs()
+            }
+        }
+        drawerLayout.closeDrawer(GravityCompat.START)
+        return true
     }
 
     private fun rateUs() {
@@ -68,6 +106,33 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
+    private fun isNetworkConnected(): Boolean {
+        val cm = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        return cm.activeNetworkInfo != null
+    }
+
+    private fun showErrorDialog() {
+
+        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme).setCancelable(false)
+            .setTitle(resources.getString(R.string.internet_error_title))
+            .setMessage(resources.getString(R.string.internet_error_message))
+            /* .setNeutralButton(resources.getString(R.string.cancel)) { dialog, which ->
+                 // Respond to neutral button press
+             }
+             .setNegativeButton(resources.getString(R.string.decline)) { dialog, which ->
+                 // Respond to negative button press
+             }*/
+            .setPositiveButton(resources.getString(android.R.string.ok)) { dialog, which ->
+                if (isNetworkConnected()){
+                    dialog.dismiss()
+                }else{
+                    dialog.dismiss()
+                    showErrorDialog()
+                }
+            }
+            .show()
+    }
+
     private fun share() {
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "text/plain"
@@ -80,13 +145,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun aboutUs() {
-        val dialog : AlertDialog.Builder = AlertDialog.Builder(this)
-        dialog.setIcon(R.drawable.company_logo)
-        dialog.setTitle(R.string.companyName)
-        dialog.setMessage(R.string.aboutUS)
-        dialog.setPositiveButton(android.R.string.ok){ myDialog,
-                                                     _-> myDialog.dismiss()
-        }.show()
+
+        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme)
+            .setIcon(R.drawable.company_logo_t)
+            .setTitle(resources.getString(R.string.companyName))
+            .setMessage(resources.getString(R.string.aboutUS))
+            /* .setNeutralButton(resources.getString(R.string.cancel)) { dialog, which ->
+                 // Respond to neutral button press
+             }
+             .setNegativeButton(resources.getString(R.string.decline)) { dialog, which ->
+                 // Respond to negative button press
+             }*/
+            .setPositiveButton(resources.getString(android.R.string.ok)) { dialog, which ->
+                if (isNetworkConnected()){
+                    dialog.dismiss()
+                }else{
+                    dialog.dismiss()
+                    showErrorDialog()
+                }
+            }
+            .show()
+    }
+
+    private fun privacyPolicy() {
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://rescue1122vehiclesdashboard.blogspot.com/"))
+        startActivity(browserIntent)
     }
 
     /*private fun moreApps() {
