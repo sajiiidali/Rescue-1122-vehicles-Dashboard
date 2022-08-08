@@ -6,6 +6,8 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.MenuItem
 import android.view.View
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -28,7 +30,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        installSplashScreen()
+
+        var keepSplashOnScreen = true
+        val delay = 2000L
+        installSplashScreen().setKeepOnScreenCondition { keepSplashOnScreen }
+        Handler(Looper.getMainLooper()).postDelayed({ keepSplashOnScreen = false }, delay)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.appBarMain.toolbar)

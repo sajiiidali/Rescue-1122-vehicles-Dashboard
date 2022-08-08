@@ -7,13 +7,11 @@
     android:background="@drawable/background"
     tool:context=".SelectVehiclesType">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Operational"
@@ -22,6 +20,7 @@
             android:text="@string/operational"
             android:textColor="@color/white"
             android:textSize="20sp"
+            android:gravity="center"
             android:background="@drawable/shape"
             android:clickable="true"
             android:elevation="10dp"
@@ -41,6 +40,7 @@
             android:elevation="10dp"
             android:focusable="true"
             android:textSize="20sp"
+            android:gravity="center"
             android:textColor="@color/white"
             android:text="@string/ptsVehicles"
             android:textAllCaps="false"
@@ -58,6 +58,7 @@
             android:clickable="true"
             android:elevation="10dp"
             android:focusable="true"
+            android:gravity="center"
             android:textColor="@color/white"
             android:text="@string/motorBike"
             android:textSize="20sp"
@@ -66,7 +67,9 @@
             app:layout_constraintStart_toStartOf="@+id/ptsVehicles"
             app:layout_constraintTop_toBottomOf="@+id/ptsVehicles" />
 
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
