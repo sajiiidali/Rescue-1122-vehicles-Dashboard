@@ -11,15 +11,15 @@ android {
         applicationId "com.sajiiidali.rescue1122.vehicle.dashboard"
         minSdk 21
         targetSdk 33
-        versionCode 7
-        versionName "1.8"
+        versionCode 9
+        versionName "1.10"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

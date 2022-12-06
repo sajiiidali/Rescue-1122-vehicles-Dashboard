@@ -11,29 +11,29 @@ class ShowOperationDialog : DialogFragment(R.layout.show_operation_dialog) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val bna1 = view.findViewById<AppCompatButton>(R.id.btn1)
-        val bna2 = view.findViewById<AppCompatButton>(R.id.bna2)
-        val bna3 = view.findViewById<AppCompatButton>(R.id.btn3)
-        val bna4 = view.findViewById<AppCompatButton>(R.id.btn4)
+        val bna1 = view.findViewById<AppCompatButton>(R.id.btn26)
+        val bna2 = view.findViewById<AppCompatButton>(R.id.bna29)
+        val bna3 = view.findViewById<AppCompatButton>(R.id.btn30)
+        val bna4 = view.findViewById<AppCompatButton>(R.id.btn33)
         val bnf1 = view.findViewById<AppCompatButton>(R.id.Bnf1)
         val bnf3 = view.findViewById<AppCompatButton>(R.id.Bnf3)
         val bnr1 = view.findViewById<AppCompatButton>(R.id.Bnr1)
         val bng1 = view.findViewById<AppCompatButton>(R.id.bng1)
 
         bna1.setOnClickListener {
-            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1209/edit")
+            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1423/edit")
             findNavController().navigate(directions)
         }
         bna2.setOnClickListener {
-            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1312/edit")
+            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1489/edit")
             findNavController().navigate(directions)
         }
         bna3.setOnClickListener {
-            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1191/edit")
+            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1570/edit")
             findNavController().navigate(directions)
         }
         bna4.setOnClickListener {
-            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1197/edit")
+            val directions = ShowOperationDialogDirections.actionShowOperationDialogToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1425/edit")
             findNavController().navigate(directions)
         }
         bnf1.setOnClickListener {

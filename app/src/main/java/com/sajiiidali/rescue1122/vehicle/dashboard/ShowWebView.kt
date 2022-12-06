@@ -15,12 +15,13 @@ import androidx.preference.PreferenceManager
 import androidx.lifecycle.ViewModelProvider
 import com.sajiiidali.rescue1122.vehicle.dashboard.viewModel.WebViewModel
 import android.content.Intent
-
+import android.graphics.drawable.AnimationDrawable
 
 
 class ShowWebView : Fragment(R.layout.show_web_view){
     private lateinit var pageViewModel: WebViewModel
     var myWebView: WebView? = null
+    private lateinit var rocketAnimation: AnimationDrawable
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,6 +36,8 @@ class ShowWebView : Fragment(R.layout.show_web_view){
         SettingsFragment.password = settingPreferences.getString("passWord","")!!
 
         val args = ShowWebViewArgs.fromBundle(requireArguments())
+
+
         val progressBar = view.findViewById<ProgressBar>(R.id.progress_circular)
 
         myWebView?.webViewClient = MyWebViewClient(progressBar, SettingsFragment.userName!!, SettingsFragment.password!!)
@@ -71,21 +74,6 @@ class ShowWebView : Fragment(R.layout.show_web_view){
             }
         })
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     class MyWebViewClient(progressBar: ProgressBar, userName: String, password: String) : WebViewClient(){
         private val myProgressBar = progressBar
         private val userNameOf = userName

@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Vehicle DashBoard</string>
-    <string name="bna1">BNA 01</string>
-    <string name="bna2">BNA 02</string>
-    <string name="bna3">BNA 03</string>
-    <string name="bna4">BNA 04</string>
+    <string name="bna_02">BNA 2</string>
+    <string name="bna_04">BNA 4</string>
+    <string name="bna1">BNA 26</string>
+    <string name="bna2">BNA 29</string>
+    <string name="bna3">BNA 30</string>
+    <string name="bna4">BNA 33</string>
     <string name="internet_error_title">No Internet Connection</string>
     <string name="internet_error_message">Make sure Wi-Fi or mobile data\nis turned on, then try again</string>
     <string name="operational">Operational\n Vehicles</string>
