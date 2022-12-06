@@ -14,18 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Rescue1122VehicleDashBoard.noActionBar" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="colorPrimaryDark">@color/darkGray</item>
-        <item name="colorPrimary">@color/darkGray</item>
-        <item name="android:windowBackground">@color/white</item>
+    <style name="Theme.Rescue1122VehicleDashBoard.noActionBar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/holo_blue_light</item>
+        <item name="colorPrimary">@color/holo_blue_light</item>
+        <item name="colorOnPrimary">@color/holo_blue_light</item>
+        <item name="colorOnSecondary">@color/holo_blue_light</item>
+        <item name="colorOnPrimaryContainer">@color/holo_blue_light</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-    </style>
-    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
-    </style>
-    <style name="PositiveButtonStyle" parent="@style/Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

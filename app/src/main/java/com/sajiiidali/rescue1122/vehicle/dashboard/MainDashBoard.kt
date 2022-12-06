@@ -1,6 +1,7 @@
 package com.sajiiidali.rescue1122.vehicle.dashboard
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -8,8 +9,12 @@ import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import com.sajiiidali.rescue1122.vehicle.dashboard.databinding.MainDashboardBinding
 import com.sajiiidali.rescue1122.vehicle.dashboard.viewModel.WebViewModel
@@ -30,52 +35,74 @@ class MainDashBoard :Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        webView = binding?.showBillWebView!!
+        progressBar = binding?.progressCircular!!
+        mContext = requireContext()
+
         pageViewModel = ViewModelProvider(this).get(WebViewModel::class.java)
-        pageViewModel.setWebView(binding?.showBillWebView!!)
+        pageViewModel.setWebView(webView!!)
 
         val settingPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
         SettingsFragment.userName = settingPreferences.getString("userName","")!!
-        SettingsFragment.password = settingPreferences.getString("passWord","")!!
+        SettingsFragment.password = settingPreferences.getString("password","")!!
 
-        binding?.showBillWebView!!.webViewClient = ShowWebView.MyWebViewClient(
+        if (SettingsFragment.userName!!.isEmpty()){
+            val direction = MainDashBoardDirections.actionMainDashBoardToSaveUserNamePassword()
+            findNavController().navigate(direction)
+        }
+
+        webView!!.webViewClient = ShowWebView.MyWebViewClient(
             binding?.progressCircular!!,
             SettingsFragment.userName!!,
             SettingsFragment.password!!
         )
 
-        val myWebSettings = binding?.showBillWebView!!.settings
+        val myWebSettings = webView!!.settings
         myWebSettings.javaScriptEnabled = true
         myWebSettings.loadWithOverviewMode = true
         myWebSettings.useWideViewPort = true
         myWebSettings.builtInZoomControls = true
 
-        binding?.showBillWebView!!.loadUrl("https://punjab.rescue1122.org/dashboard")
+        webView!!.loadUrl("https://punjab.rescue1122.org/dashboard")
 
-        binding?.showBillWebView!!.setOnKeyListener(View.OnKeyListener { _, keyCode, _ ->
-            if (keyCode == KeyEvent.KEYCODE_BACK && binding?.showBillWebView!!.canGoBack()) {
-                binding?.showBillWebView!!.goBack()
+        webView!!.setOnKeyListener(View.OnKeyListener { _, keyCode, _ ->
+            if (keyCode == KeyEvent.KEYCODE_BACK && webView!!.canGoBack()) {
+                webView!!.goBack()
                 return@OnKeyListener true
             }
             false
         })
 
-        binding?.showBillWebView!!.setDownloadListener { url, _, _, _, _ ->
+        webView!!.setDownloadListener { url, _, _, _, _ ->
             val uri = Uri.parse(url)
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
-
     }
-
-
-
-
-
-
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+    companion object{
+        @SuppressLint("StaticFieldLeak")
+        var webView:WebView? = null
+        @SuppressLint("StaticFieldLeak")
+        var progressBar:ProgressBar? =  null
+        @SuppressLint("StaticFieldLeak")
+        var mContext:Context? =  null
+
+        fun reloadWeb(){
+            webView?.reload()
+
+            val settingPreferences = PreferenceManager.getDefaultSharedPreferences(mContext!!)
+            SettingsFragment.userName = settingPreferences.getString("userName","")!!
+            SettingsFragment.password = settingPreferences.getString("password","")!!
+            webView!!.webViewClient = ShowWebView.MyWebViewClient(
+                progressBar!!,
+                SettingsFragment.userName!!,
+                SettingsFragment.password!!
+            )
+        }
+    }
+
 }

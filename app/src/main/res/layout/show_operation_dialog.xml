@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn1"
+            android:id="@+id/btn26"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bna2"
+            android:id="@+id/bna29"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -41,13 +41,13 @@
             android:text="@string/bna2"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn1"
+            app:layout_constraintEnd_toEndOf="@+id/btn26"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/btn1"
-            app:layout_constraintTop_toBottomOf="@+id/btn1" />
+            app:layout_constraintStart_toStartOf="@+id/btn26"
+            app:layout_constraintTop_toBottomOf="@+id/btn26" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn3"
+            android:id="@+id/btn30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -57,12 +57,12 @@
             android:text="@string/bna3"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/bna2"
-            app:layout_constraintStart_toStartOf="@+id/bna2"
-            app:layout_constraintTop_toBottomOf="@+id/bna2" />
+            app:layout_constraintEnd_toEndOf="@+id/bna29"
+            app:layout_constraintStart_toStartOf="@+id/bna29"
+            app:layout_constraintTop_toBottomOf="@+id/bna29" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn4"
+            android:id="@+id/btn33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -72,9 +72,9 @@
             android:text="@string/bna4"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn3"
-            app:layout_constraintStart_toStartOf="@+id/btn3"
-            app:layout_constraintTop_toBottomOf="@+id/btn3" />
+            app:layout_constraintEnd_toEndOf="@+id/btn30"
+            app:layout_constraintStart_toStartOf="@+id/btn30"
+            app:layout_constraintTop_toBottomOf="@+id/btn30" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Bnf1"
@@ -87,9 +87,9 @@
             android:text="@string/bnf1"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn4"
-            app:layout_constraintStart_toStartOf="@+id/btn4"
-            app:layout_constraintTop_toBottomOf="@+id/btn4" />
+            app:layout_constraintEnd_toEndOf="@+id/btn33"
+            app:layout_constraintStart_toStartOf="@+id/btn33"
+            app:layout_constraintTop_toBottomOf="@+id/btn33" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Bnf3"

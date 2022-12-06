@@ -25,5 +25,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
     companion object{
         var userName :String? = null
         var password :String? = null
+        var location :String? = null
     }
 }

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -75,17 +74,29 @@
         <entry key="..\:/Users/Muhammad Sajid/AndroidStudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/select_type_vehicles.xml" value="0.30625" />
         <entry key="..\:/Users/Muhammad Sajid/AndroidStudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_operation_dialog.xml" value="0.33" />
         <entry key="..\:/Users/Muhammad Sajid/AndroidStudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/xml/root_preferences.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ambulance splash screen.xml" value="0.129" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ambulance_splash_screen_31.xml" value="0.129" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ambulance_splash_screen_below_31.xml" value="0.129" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ic_about.xml" value="0.1" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ic_car.xml" value="0.1065" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ic_home.xml" value="0.1065" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ic_privacy_policy.xml" value="0.1" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/ic_setting.xml" value="0.1065" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/loader.xml" value="0.129" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/progress_bar.xml" value="0.129" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-hdpi/check_vehicle_status.xml" value="0.5" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-hdpi/show_web_view.xml" value="0.49" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-land/show_web_view.xml" value="0.6721311475409836" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-ldpi/check_vehicle_status.xml" value="1.225" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-ldpi/show_web_view.xml" value="0.8833333333333333" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-mdpi/check_vehicle_status.xml" value="0.75" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-mdpi/show_web_view.xml" value="0.45901639344262296" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-xhdpi/show_web_view.xml" value="0.29444444444444445" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-xxhdpi/check_vehicle_status.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-xxhdpi/homefragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-xxhdpi/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout-xxxhdpi/show_web_view.xml" value="0.153125" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/app_bar_main.xml" value="0.203125" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/check_vehicle_status.xml" value="0.45901639344262296" />
@@ -96,19 +107,19 @@
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/nav_header_main.xml" value="0.3092369477911647" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/select_employees.xml" value="0.9" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/select_type_vehicles.xml" value="0.45901639344262296" />
-        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_operation_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_operation_dialog.xml" value="0.6583850931677019" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_reports.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_web_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/show_web_view.xml" value="0.5" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/layout/vehicles_layout.xml" value="0.45901639344262296" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/menu/activity_main_drawer.xml" value="0.49" />
-        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
-        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/menu/my_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.75" />
+        <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/menu/my_menu.xml" value="0.75" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/mipmap-anydpi-v26/nav_header_logo.xml" value="0.1" />
         <entry key="..\:/Users/MuhammadSajid/StudioProjects/Rescue-1122-vehicles-Dashboard/app/src/main/res/xml/root_preferences.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

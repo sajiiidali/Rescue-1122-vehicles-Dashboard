@@ -2,6 +2,7 @@ package com.sajiiidali.rescue1122.vehicle.dashboard
 
 import android.os.Bundle
 import android.transition.TransitionInflater
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
@@ -9,87 +10,241 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.sajiiidali.rescue1122.vehicle.dashboard.databinding.MotorBikesBinding
+import com.sajiiidali.rescue1122.vehicle.dashboard.viewModel.WebViewModel
 import java.util.*
 
-class MotorBikes : DialogFragment(R.layout.motor_bikes) {
+class MotorBikes : DialogFragment() {
+
+    private lateinit var pageViewModel: WebViewModel
+    private var _binding: MotorBikesBinding? = null
+    private val binding get() = _binding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        _binding = MotorBikesBinding.inflate(inflater, container, false)
+        return binding!!.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val bnb1 = view.findViewById<AppCompatButton>(R.id.BNB01)
-        val bnb2 = view.findViewById<AppCompatButton>(R.id.BNB02)
-        val bnb3 = view.findViewById<AppCompatButton>(R.id.BNB03)
-        val bnb4 = view.findViewById<AppCompatButton>(R.id.BNB04)
-        val bnb5 = view.findViewById<AppCompatButton>(R.id.BNB05)
-        val bnb6 = view.findViewById<AppCompatButton>(R.id.BNB06)
-        val bnb7 = view.findViewById<AppCompatButton>(R.id.BNB07)
-        val bnb8 = view.findViewById<AppCompatButton>(R.id.BNB08)
-        val bnb9 = view.findViewById<AppCompatButton>(R.id.BNB09)
-        val bnb10 = view.findViewById<AppCompatButton>(R.id.BNB10)
-        val bnb11 = view.findViewById<AppCompatButton>(R.id.BNB11)
-        val bnb12 = view.findViewById<AppCompatButton>(R.id.BNB12)
-        val bnb13 = view.findViewById<AppCompatButton>(R.id.BNB13)
-        val bnb14 = view.findViewById<AppCompatButton>(R.id.BNB14)
+        with(binding!!){
+            BNB01.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1686/edit")
+                findNavController().navigate(directions)
+            }
+            BNB02.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1675/edit")
+                findNavController().navigate(directions)
+            }
+            BNB03.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1676/edit")
+                findNavController().navigate(directions)
+            }
+            BNB04.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1690/edit")
+                findNavController().navigate(directions)
+            }
+            BNB05.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1692/edit")
+                findNavController().navigate(directions)
+            }
+            BNB06.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1693/edit")
+                findNavController().navigate(directions)
+            }
+            BNB07.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1701/edit")
+                findNavController().navigate(directions)
+            }
+            BNB08.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2422/edit")
+                findNavController().navigate(directions)
+            }
+            BNB09.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2112/edit")
+                findNavController().navigate(directions)
+            }
+            BNB10.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2506/edit")
+                findNavController().navigate(directions)
+            }
+            BNB11.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2383/edit")
+                findNavController().navigate(directions)
+            }
+            BNB12.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2043/edit")
+                findNavController().navigate(directions)
+            }
+            BNB13.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2266/edit")
+                findNavController().navigate(directions)
+            }
+            BNB14.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1691/edit")
+                findNavController().navigate(directions)
+            }
+            BNB15.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2035/edit")
+                findNavController().navigate(directions)
+            }
+            BNB16.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3563/edit")
+                findNavController().navigate(directions)
+            }
+            BNB17.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3564/edit")
+                findNavController().navigate(directions)
+            }
+            BNB18.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3565/edit")
+                findNavController().navigate(directions)
+            }
+            BNB19.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3566/edit")
+                findNavController().navigate(directions)
+            }
+            BNB20.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3567/edit")
+                findNavController().navigate(directions)
+            }
+            BNB21.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3568/edit")
+                findNavController().navigate(directions)
+            }
+            BNB22.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3569/edit")
+                findNavController().navigate(directions)
+            }
+            BNB23.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3570/edit")
+                findNavController().navigate(directions)
+            }
+            BNB24.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3618/edit")
+                findNavController().navigate(directions)
+            }
+            BNB25.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3572/edit")
+                findNavController().navigate(directions)
+            }
+            BNB26.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3573/edit")
+                findNavController().navigate(directions)
+            }
+            BNB27.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3574/edit")
+                findNavController().navigate(directions)
+            }
+            BNB28.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3575/edit")
+                findNavController().navigate(directions)
+            }
+            BNB29.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3576/edit")
+                findNavController().navigate(directions)
+            }
+            BNB30.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3577/edit")
+                findNavController().navigate(directions)
+            }
+            BNB31.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3578/edit")
+                findNavController().navigate(directions)
+            }
+            BNB32.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3579/edit")
+                findNavController().navigate(directions)
+            }
+            BNB33.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3580/edit")
+                findNavController().navigate(directions)
+            }
+            BNB34.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3581/edit")
+                findNavController().navigate(directions)
+            }
+            BNB35.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3582/edit")
+                findNavController().navigate(directions)
+            }
+            BNB36.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3619/edit")
+                findNavController().navigate(directions)
+            }
+            BNB37.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3620/edit")
+                findNavController().navigate(directions)
+            }
+            BNB38.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3621/edit")
+                findNavController().navigate(directions)
+            }
+            BNB39.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3622/edit")
+                findNavController().navigate(directions)
+            }
+            BNB40.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3623/edit")
+                findNavController().navigate(directions)
+            }
+            BNB41.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3624/edit")
+                findNavController().navigate(directions)
+            }
+            BNB42.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3625/edit")
+                findNavController().navigate(directions)
+            }
+            BNB43.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3626/edit")
+                findNavController().navigate(directions)
+            }
+            BNB44.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3627/edit")
+                findNavController().navigate(directions)
+            }
+            BNB45.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3628/edit")
+                findNavController().navigate(directions)
+            }
+            BNB46.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3629/edit")
+                findNavController().navigate(directions)
+            }
+            BNB47.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3583/edit")
+                findNavController().navigate(directions)
+            }
+            BNB48.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3571/edit")
+                findNavController().navigate(directions)
+            }
+            BNB49.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3584/edit")
+                findNavController().navigate(directions)
+            }
+            BNB50.setOnClickListener {
+                val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/3630/edit")
+                findNavController().navigate(directions)
+            }
+            /*  BNB51.setOnClickListener {
+                  val directions = MotorBikesDirections.actionMotorBikeToShowWebView("")
+                  findNavController().navigate(directions)
+              }*/
+        }
 
-        bnb1.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1686/edit")
-            findNavController().navigate(directions)
-        }
-        bnb2.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1675/edit")
-            findNavController().navigate(directions)
-        }
-        bnb3.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1676/edit")
-            findNavController().navigate(directions)
-        }
-        bnb4.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1690/edit")
-            findNavController().navigate(directions)
-        }
-        bnb5.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1692/edit")
-            findNavController().navigate(directions)
-        }
-        bnb6.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1693/edit")
-            findNavController().navigate(directions)
-        }
-        bnb7.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1701/edit")
-            findNavController().navigate(directions)
-        }
-        bnb8.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2422/edit")
-            findNavController().navigate(directions)
-        }
-        bnb9.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2112/edit")
-            findNavController().navigate(directions)
-        }
-        bnb10.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2506/edit")
-            findNavController().navigate(directions)
-        }
-        bnb11.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2383/edit")
-            findNavController().navigate(directions)
-        }
-        bnb12.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2043/edit")
-            findNavController().navigate(directions)
-        }
-        bnb13.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/2266/edit")
-            findNavController().navigate(directions)
-        }
-        bnb14.setOnClickListener {
-            val directions = MotorBikesDirections.actionMotorBikeToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1691/edit")
-            findNavController().navigate(directions)
-        }
+
+
+
     }
     override fun onStart() {
         super.onStart()
         dialog!!.window!!.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

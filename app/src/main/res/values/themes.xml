@@ -19,16 +19,12 @@
         <item name="colorOnPrimary">@color/holo_blue_light</item>
         <item name="colorOnSecondary">@color/holo_blue_light</item>
         <item name="colorOnPrimaryContainer">@color/holo_blue_light</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialog</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
-    </style>
-    <style name="PositiveButtonStyle" parent="@style/Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">@color/black</item>
-    </style>
 
-    <style name="Theme.GlobalCricketInfo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="Theme.GlobalCricketInfo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.RescueDashBoard.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.RescueDashBoard.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

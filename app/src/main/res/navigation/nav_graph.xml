@@ -42,16 +42,14 @@
             app:popExitAnim="@anim/slid_out_right"/>
     </dialog>
     <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SettingsFragment"
-        android:label="SettingsFragment" />
-    <action android:id="@+id/action_global_settingsFragment"
-        app:destination="@id/settingsFragment" />
-    <fragment
         android:id="@+id/MainDashBoard"
         android:name="com.sajiiidali.rescue1122.vehicle.dashboard.MainDashBoard"
         android:label="@string/DashBoard"
-        tools:layout="@layout/main_dashboard" />
+        tools:layout="@layout/main_dashboard" >
+        <action
+            android:id="@+id/action_MainDashBoard_to_saveUserNamePassword"
+            app:destination="@id/saveUserNamePassword" />
+    </fragment>
     <fragment
         android:id="@+id/selectVehiclesType"
         android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SelectVehiclesType"
@@ -66,6 +64,9 @@
         <action
             android:id="@+id/action_selectVehiclesType_to_MotorBike"
             app:destination="@id/MotorBike" />
+        <action
+            android:id="@+id/action_selectVehiclesType_to_showWebView"
+            app:destination="@id/showWebView" />
     </fragment>
     <fragment
         android:id="@+id/selectEmployees"
@@ -138,4 +139,10 @@
             app:popEnterAnim="@anim/slid_in_left"
             app:popExitAnim="@anim/slid_out_right" />
     </fragment>
+    <dialog
+        android:id="@+id/saveUserNamePassword"
+        android:name="com.sajiiidali.rescue1122.vehicle.dashboard.SaveUserNamePassword"
+        android:label="save_username_password"
+        tools:layout="@layout/save_username_password" >
+    </dialog>
 </navigation>

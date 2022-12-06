@@ -1,14 +1,15 @@
 package com.sajiiidali.rescue1122.vehicle.dashboard
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.preference.PreferenceManager
@@ -37,7 +38,7 @@ class ShowEmergencyReports : Fragment() {
 
         val settingPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
         SettingsFragment.userName = settingPreferences.getString("userName","")!!
-        SettingsFragment.password = settingPreferences.getString("passWord","")!!
+        SettingsFragment.password = settingPreferences.getString("password","")!!
 
         binding?.showBillWebView!!.webViewClient = ShowWebView.MyWebViewClient(
             binding?.progressCircular!!,

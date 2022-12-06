@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Vehicle DashBoard</string>
-    <string name="bna1">BNA 01</string>
-    <string name="bna2">BNA 02</string>
-    <string name="bna3">BNA 03</string>
-    <string name="bna4">BNA 04</string>
+    <string name="bna_02">BNA 2</string>
+    <string name="bna_04">BNA 4</string>
+    <string name="bna1">BNA 26</string>
+    <string name="bna2">BNA 29</string>
+    <string name="bna3">BNA 30</string>
+    <string name="bna4">BNA 33</string>
     <string name="internet_error_title">No Internet Connection</string>
     <string name="internet_error_message">Make sure Wi-Fi or mobile data\nis turned on, then try again</string>
     <string name="operational">Operational\n Vehicles</string>
@@ -28,6 +30,42 @@
     <string name="BNB12">BNB 12</string>
     <string name="BNB13">BNB 13</string>
     <string name="BNB14">BNB 14</string>
+    <string name="BNB15">BNB 15</string>
+    <string name="BNB16">BNB 16</string>
+    <string name="BNB17">BNB 17</string>
+    <string name="BNB18">BNB 18</string>
+    <string name="BNB19">BNB 19</string>
+    <string name="BNB20">BNB 20</string>
+    <string name="BNB21">BNB 21</string>
+    <string name="BNB22">BNB 22</string>
+    <string name="BNB23">BNB 23</string>
+    <string name="BNB24">BNB 24</string>
+    <string name="BNB25">BNB 25</string>
+    <string name="BNB26">BNB 26</string>
+    <string name="BNB27">BNB 27</string>
+    <string name="BNB28">BNB 28</string>
+    <string name="BNB29">BNB 29</string>
+    <string name="BNB30">BNB 30</string>
+    <string name="BNB31">BNB 31</string>
+    <string name="BNB32">BNB 32</string>
+    <string name="BNB33">BNB 33</string>
+    <string name="BNB34">BNB 34</string>
+    <string name="BNB35">BNB 35</string>
+    <string name="BNB36">BNB 36</string>
+    <string name="BNB37">BNB 37</string>
+    <string name="BNB38">BNB 38</string>
+    <string name="BNB39">BNB 39</string>
+    <string name="BNB40">BNB 40</string>
+    <string name="BNB41">BNB 41</string>
+    <string name="BNB42">BNB 42</string>
+    <string name="BNB43">BNB 43</string>
+    <string name="BNB44">BNB 44</string>
+    <string name="BNB45">BNB 45</string>
+    <string name="BNB46">BNB 46</string>
+    <string name="BNB47">BNB 47</string>
+    <string name="BNB48">BNB 48</string>
+    <string name="BNB49">BNB 49</string>
+    <string name="BNB50">BNB 50</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -49,7 +87,7 @@
     <string name="rate_us">Rate us</string>
     <string name="About">About</string>
     <string name="moreApps">More Apps</string>
-    <string name="aboutUS">Version App 7.1.8\nEmail ID:\nDigitalFingerApps.pk@gmail.com</string>
+    <string name="aboutUS">Version App 10.1.11\nEmail ID:\nDigitalFingerApps.pk@gmail.com</string>
     <string name="settings">Settings</string>
     <string name="vehicles">Vehicles</string>
     <string name="vehiclesDiagnos">Vehicles\n Diagnoses</string>
@@ -85,4 +123,44 @@
     <string name="Attendance">Attendance</string>
     <string name="Report">Reports</string>
     <string name="MainDashBoard">DashBoard</string>
+    <string name="onetime"><![CDATA[Save Username & Password]]></string>
+    <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="resetTitle">Do you want to Reset UserName and Password?</string>
+    <string name="location">Save Your Location</string>
+    <string name="DropDownTitle">Set Location</string>
+    <string name="bnf5">BNF-05</string>
+    <string name="BNA16">BNA-16</string>
+    <string name="BNA2">BNA-02</string>
+    <string name="BNA15">BNA-15</string>
+    <string name="BNA18">BNA-18</string>
+    <string name="BNA28">BNA-28</string>
+    <string name="bnf2">BNF-02</string>
+    <string name="BNA8">BNA-08</string>
+    <string name="BNA13">BNA-13</string>
+    <string name="BNA14">BNA-14</string>
+    <string name="BNA12">BNA-12</string>
+    <string name="BNA27">BNA-27</string>
+    <string name="bnf6">BNF-06</string>
+    <string name="BNA6">BNA-06</string>
+    <string name="BNA19">BNA-19</string>
+    <string name="BNA20">BNA-20</string>
+    <string name="BNA32">BNA-32</string>
+    <string name="BNA4">BNA-04</string>
+    <string name="BNA23">BNA-23</string>
+    <string name="BNA24">BNA-24</string>
+    <string name="BNA31">BNA-31</string>
+    <string name="bnf4">BNF-04</string>
+    <string name="bna10">BNA-10</string>
+    <string name="bna11">BNA-11</string>
+
+    <string-array name="locationItems">
+        <item>RS-01 Bahawalnagar</item>
+        <item>RS-02 Chistian</item>
+        <item>RS-03 Haroonabad</item>
+        <item>RS-04 Minchanabad</item>
+        <item>RS-05 FortAbbas</item>
+    </string-array>
+
 </resources>
