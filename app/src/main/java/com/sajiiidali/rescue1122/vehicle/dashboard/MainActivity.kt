@@ -84,9 +84,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.privacyPolicy->{
                 privacyPolicy()
             }
-            R.id.settings->{
-                navController.navigate(R.id.settingsFragment)
-            }
             R.id.checkUpdate->{
                 rateUs()
             }
@@ -120,7 +117,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun showErrorDialog() {
 
-        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme).setCancelable(false)
+        MaterialAlertDialogBuilder(this,R.style.MaterialAlertDialog).setCancelable(false)
             .setTitle(resources.getString(R.string.internet_error_title))
             .setMessage(resources.getString(R.string.internet_error_message))
             /* .setNeutralButton(resources.getString(R.string.cancel)) { dialog, which ->
@@ -153,7 +150,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun aboutUs() {
 
-        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme)
+        MaterialAlertDialogBuilder(this,R.style.MaterialAlertDialog)
             .setIcon(R.drawable.company_logo_t)
             .setTitle(resources.getString(R.string.companyName))
             .setMessage(resources.getString(R.string.aboutUS))
