@@ -2,14 +2,12 @@ package com.sajiiidali.rescue1122.vehicle.dashboard
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.net.ConnectivityManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -19,7 +17,6 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
-import androidx.preference.PreferenceManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.navigation.NavigationView
@@ -65,9 +62,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     bottomNavigation.visibility = View.GONE
                     supportActionBar?.hide()
                 }
-                R.id.vehicles3,R.id.selectEmployees->{
-                    supportActionBar?.hide()
-                }
                 else -> {
                     bottomNavigation.visibility = View.VISIBLE
                     supportActionBar?.show()
@@ -75,41 +69,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.my_menu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.reset -> {
-                resetUserNamePassword()
-                return true
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-    private fun resetUserNamePassword() {
-        MaterialAlertDialogBuilder(this,R.style.MaterialAlertDialog).setCancelable(false)
-            .setTitle(resources.getString(R.string.resetTitle))
-             .setNegativeButton(resources.getString(R.string.Cancel)) { dialog, _ ->
-                 dialog.dismiss()
-             }
-            .setPositiveButton(resources.getString(android.R.string.ok)) { dialog, _ ->
-                val settingPreferences = PreferenceManager.getDefaultSharedPreferences(this)
-                val editor = settingPreferences.edit()
-                editor.putString("userName", null)
-                editor.putString("password", null)
-                editor.putString("location", null)
-                editor.apply()
-                dialog.dismiss()
-                navController.navigate(R.id.saveUserNamePassword)
-            }
-            .show()
-    }
-
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragmentContainer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
@@ -124,6 +83,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.privacyPolicy->{
                 privacyPolicy()
+            }
+            R.id.settings->{
+                navController.navigate(R.id.settingsFragment)
             }
             R.id.checkUpdate->{
                 rateUs()
@@ -158,7 +120,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun showErrorDialog() {
 
-        MaterialAlertDialogBuilder(this,R.style.MaterialAlertDialog).setCancelable(false)
+        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme).setCancelable(false)
             .setTitle(resources.getString(R.string.internet_error_title))
             .setMessage(resources.getString(R.string.internet_error_message))
             /* .setNeutralButton(resources.getString(R.string.cancel)) { dialog, which ->
@@ -191,7 +153,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun aboutUs() {
 
-        MaterialAlertDialogBuilder(this,R.style.MaterialAlertDialog)
+        MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme)
             .setIcon(R.drawable.company_logo_t)
             .setTitle(resources.getString(R.string.companyName))
             .setMessage(resources.getString(R.string.aboutUS))
@@ -222,7 +184,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         intent.data = Uri.parse("market://search?q=pub:Digital Finger Apps")
         startActivity(intent)
     }*/
-
 }
 
 
