@@ -32,7 +32,7 @@ class ShowWebView : Fragment(R.layout.show_web_view){
 
         val settingPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
         SettingsFragment.userName = settingPreferences.getString("userName","")!!
-        SettingsFragment.password = settingPreferences.getString("passWord","")!!
+        SettingsFragment.password = settingPreferences.getString("password","")!!
 
         val args = ShowWebViewArgs.fromBundle(requireArguments())
         val progressBar = view.findViewById<ProgressBar>(R.id.progress_circular)
@@ -72,20 +72,6 @@ class ShowWebView : Fragment(R.layout.show_web_view){
         })
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     class MyWebViewClient(progressBar: ProgressBar, userName: String, password: String) : WebViewClient(){
         private val myProgressBar = progressBar
         private val userNameOf = userName
@@ -101,8 +87,8 @@ class ShowWebView : Fragment(R.layout.show_web_view){
             if (url == "https://punjab.rescue1122.org/login"){
                 view?.loadUrl("javascript:(function(){  document.getElementsByTagName('input')[1].value ='$userNameOf';})();")
                 view?.loadUrl("javascript:(function(){ document.getElementsByTagName('input')[2].value ='$passwordOf';})();")
+                view?.evaluateJavascript("document.getElementById('captcha').inputMode = 'numeric';", null)
             }
-
 
             super.onPageFinished(view, url)
         }

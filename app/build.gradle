@@ -5,21 +5,21 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.sajiiidali.rescue1122.vehicle.dashboard"
         minSdk 21
-        targetSdk 33
-        versionCode 7
-        versionName "1.8"
+        targetSdk 34
+        versionCode 14
+        versionName "1.15"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -33,11 +33,12 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.sajiiidali.rescue1122.vehicle.dashboard'
 }
 
 dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.0'
-    def nav_version = "2.3.5"
+    def nav_version = "2.5.0"
 
     // Kotlin
     //noinspection GradleDependency

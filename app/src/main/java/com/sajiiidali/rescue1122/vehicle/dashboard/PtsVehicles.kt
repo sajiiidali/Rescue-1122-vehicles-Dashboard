@@ -26,19 +26,15 @@ class PtsVehicles : DialogFragment() {
                 val direction = com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehiclesDirections.actionPtsVehiclesToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1338/edit")
                 findNavController().navigate(direction)
             }
-            bna8.setOnClickListener {
-                val direction = com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehiclesDirections.actionPtsVehiclesToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1305/edit")
-                findNavController().navigate(direction)
-            }
             bna9.setOnClickListener {
                 val direction = com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehiclesDirections.actionPtsVehiclesToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1310/edit")
                 findNavController().navigate(direction)
             }
-            bna10.setOnClickListener {
+            bna11.setOnClickListener {
                 val direction = com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehiclesDirections.actionPtsVehiclesToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1202/edit")
                 findNavController().navigate(direction)
             }
-            bna11.setOnClickListener {
+            bna10.setOnClickListener {
                 val direction = com.sajiiidali.rescue1122.vehicle.dashboard.PtsVehiclesDirections.actionPtsVehiclesToShowWebView("https://punjab.rescue1122.org/dashboard/vehicle/1324/edit")
                 findNavController().navigate(direction)
             }
